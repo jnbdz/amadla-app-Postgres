@@ -1,0 +1,16 @@
+---
+version: 1
+about:
+  version: 1.0 # Based on Git tags
+  description: Postgres - Postgres database.
+  authors:
+    - Jean-Nicolas Boulay (JN) <https://jean-nicolas.name>
+  category: Database
+  tags:
+    - database
+    - postgres
+    - db
+    - storage
+  requires:
+    - ansible
+    - jinja2
