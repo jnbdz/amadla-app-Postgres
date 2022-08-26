@@ -1,16 +1,14 @@
 ---
 version: 1
-about:
-  version: 1.0 # Based on Git tags
+module:
   description: Postgres - Postgres database.
   authors:
     - Jean-Nicolas Boulay (JN) <https://jean-nicolas.name>
   category: Database
-  tags:
-    - database
-    - postgres
-    - db
-    - storage
-  requires:
-    - ansible
-    - jinja2
+  configuration:
+    network:
+      internal:
+        ports:
+          - protocol: tcp
+            internal: 5432
+            external: 5432
